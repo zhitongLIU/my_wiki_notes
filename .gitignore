@@ -1,3 +1,7 @@
 tags
 *.swp
 *.swo
+work.md
+work/
+site_html/*
+Mine.md

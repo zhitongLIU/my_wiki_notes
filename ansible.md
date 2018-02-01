@@ -1,10 +1,10 @@
-= Ansible =
+# Ansible
 
 From redhat
 
-== advantage ==
-# server less
-# ssh/wimrm
+# advantage
+- server less
+- ssh/wimrm
 
 * inventory - list of hosts
 * playbooks - commands
@@ -13,13 +13,13 @@ From redhat
 + calling api from server
 
 
-== on node ==
+# on node
 install ansible
-{{{
+```
 yum -y install ansible
-}}}
+```
 
-== playbooks ==
+# playbooks
 Instruction to launch for software installation or update
 
 It is written in yaml Format
@@ -30,7 +30,7 @@ can use variables
 * `tasks` run sequentially
 * `handlers` are triggered by `tasks`, run once at the end of plays
 
-=== modules ===
+# modules
 has 450 default modules
 
 standar structure
@@ -39,43 +39,43 @@ standar structure
 http://docs.ansible.com/ansible/modules_by_category.html
 
 
-== inventory ==
-{{{
+# inventory
+```
 ---
 [web]
 www.sth.com
 
 [db]
 db-sth.com
-}}}
+```
 
 
-== Roles ==
+## Roles
 like a playbook, self-containted task
 
-= commands =
+# commands
 from controll node
 
 running modules
-# -m => modules
-# -a => args
-{{{
++ -m => modules
++ -a => args
+```
 ansible <inventory> <options>
 ansible web -a /bin/date
 ansible web -m ping
 ansible web -m yum -a "name=openssl state=latest"
-}}}
+```
 
 running playbooks
-{{{
+```
 ansible-playbook my-playbook.yml
-}}}
+```
 
 check mode dry-run: for validate playbook runs before making state changes on target systems
 
-# -C => check
-{{{
++ -C => check
+```
 ansible web -C -m yum -a "name=httpd state=latest"
 ansible-playbook -C my-playbook.yml
-}}}
+```
 
