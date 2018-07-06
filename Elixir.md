@@ -39,6 +39,8 @@ list
 list = [1, 2, 3]
 hd(list) #head
 tl(list) #tail
+[0 | list ] # add 0 at head of list
+[ list | 4 ] # add 4 at the end of list
 ```
 
 hash
@@ -68,3 +70,22 @@ pid  = self()
 pid |> send(:bar)
 flush()
 ```
+
+## OTP
+* Open Telecom Platform
+* framwork
+* collection outil generique
+
+### Behaviour modules
+
+#### Application
+```
+Application.start(:toto)
+Application.stop(:toto)
+```
+#### Supervisor
+
+#### GenServer
+execute iun callback when message recived
+`handle_call` is sync
+`handle_cast` is async

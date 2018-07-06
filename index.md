@@ -22,3 +22,8 @@
 * [playground](playground)
 * [Advanced_Deployment_Strategies](Advanced_Deployment_Strategies)
 * [Hadoop](Hadoop)
+* [github_best_pratics](github_best_pratics)
+* [tmux](tmux)
+* [psn](psn)
+* [paris_rails_conf](paris_rails_conf)
+* [rugged](rugged)
