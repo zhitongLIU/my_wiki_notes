@@ -13,8 +13,6 @@
 * [test_markdown](test_markdown)
 * [Fusion_360](Fusion_360)
 * [mongo](mongo)
-* [TensorFlow](TensorFlow)
-* [machine_learning](machine_learning)
 * [philo](philo)
 * [elasticsearch](elasticsearch)
 * [Elixir](Elixir)
@@ -27,3 +25,7 @@
 * [psn](psn)
 * [paris_rails_conf](paris_rails_conf)
 * [rugged](rugged)
+* [DataScience](DataScience)
+* [machine_learning](machine_learning)
+* [TensorFlow](TensorFlow)
+*

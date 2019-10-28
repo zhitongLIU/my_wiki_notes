@@ -1,3 +1,4 @@
+ref: https://rominirani.com/tutorial-getting-started-with-kubernetes-with-docker-on-mac-7f58467203fd
 # Kubernetes
     Kubernetes is a production-grade, open-source platform that orchestrates the placement (scheduling) and execution of application containers within and across computer clusters.
 
@@ -7,6 +8,10 @@ Launch test Enviroment locally
 ```
 
 in `~/.kube/config` we have our enviroment configurations
+To see current using config
+```
+kubectl config current-context
+```
 
 To use a specify conf
 ```
